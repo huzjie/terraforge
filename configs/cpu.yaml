@@ -1,0 +1,5 @@
+backend: cpu
+vision:
+  hidden_size: 384
+  num_layers: 2
+  num_heads: 8

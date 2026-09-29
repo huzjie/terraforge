@@ -1,0 +1,6 @@
+backend: mock
+data:
+  num_scenes: 200
+  synth_seed: 42
+train:
+  max_steps: 2000

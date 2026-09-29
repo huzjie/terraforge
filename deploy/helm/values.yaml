@@ -1,0 +1,16 @@
+replicaCount: 2
+image:
+  repository: huzjie/terraforge
+  tag: latest
+  pullPolicy: IfNotPresent
+service:
+  type: LoadBalancer
+  port: 8000
+resources:
+  limits:
+    cpu: "2"
+    memory: 4Gi
+  requests:
+    cpu: 500m
+    memory: 1Gi
+backend: mock

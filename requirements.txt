@@ -1,0 +1,7 @@
+# terraforge core is zero-dependency; optional extras are commented out.
+# numpy>=1.24
+# pyyaml>=6.0
+# requests>=2.28
+# openai>=1.0
+# vllm>=0.5
+# transformers>=4.40

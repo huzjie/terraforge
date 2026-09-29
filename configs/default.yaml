@@ -1,0 +1,39 @@
+model:
+  hidden_size: 768
+  num_layers: 12
+  num_heads: 12
+  vocab_size: 50257
+  max_seq_len: 4096
+  moe: true
+  num_experts: 8
+  top_k: 2
+  sliding_window: 512
+  dropout: 0.1
+vision:
+  image_size: 224
+  patch_size: 16
+  hidden_size: 768
+  num_layers: 12
+  num_heads: 12
+  channels: 3
+  any_resolution: true
+  max_tiles: 16
+train:
+  lr: 0.0003
+  warmup_steps: 100
+  max_steps: 2000
+  batch_size: 8
+  grad_clip: 1.0
+  weight_decay: 0.01
+  scheduler: cosine
+data:
+  root: data/spatial
+  num_scenes: 200
+  synth_seed: 42
+  train_ratio: 0.9
+serving:
+  host: 127.0.0.1
+  port: 8000
+backend: mock
+output_dir: outputs
+seed: 42

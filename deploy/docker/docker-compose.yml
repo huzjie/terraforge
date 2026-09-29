@@ -1,0 +1,11 @@
+services:
+  terraforge:
+    build:
+      context: ../..
+      dockerfile: deploy/docker/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - TF_BACKEND=mock
+    volumes:
+      - ../../outputs:/app/outputs

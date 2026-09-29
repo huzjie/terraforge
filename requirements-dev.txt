@@ -1,0 +1,2 @@
+# development-only extras
+pytest>=7.0

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "terraforge"
+version = "1.0.0"
+description = "Spatial multimodal world model framework for the physical world (ZDTaichu5.0-9B style)."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "terraforge contributors" }]
+keywords = ["spatial", "multimodal", "world-model", "vision", "benchmark", "zero-dependency"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/huzjie/terraforge"
+
+[tool.setuptools.packages.find]
+include = ["terraforge*"]
